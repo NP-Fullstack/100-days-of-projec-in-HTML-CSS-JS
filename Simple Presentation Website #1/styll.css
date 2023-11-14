@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Space Grotesk', sans-serif ;
+   
+}
+
+body{
+    height: 100vh;
+    background: #333333;
+
+}
+
+header{
+    padding: 30px;
+}
+
+
+a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition:  all 0.3s ease-in;
+}
+
+a:hover{
+    color: rgb(255, 196, 0);
+}
+
+li{
+    display: inline-flex;
+    margin: 34px;
+    position: relative;
+    left: 730px;
+
+
+}
+
+
+li button{
+    width: 150px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    transition:  all 0.3s ease-in;
+    
+
+}
+
+li button:hover{
+    color: black;
+    background: rgb(255, 196, 0);
+}
+li button a{
+    color: black;
+}
+
+.container-text{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 300px;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container-text h1 { 
+    font-family: monospace;
+    font-size: 40px;
+    position: relative;
+    top: 15px;
+    transition: all 0.3s ease-in;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: solid 2px  rgb(255, 196, 0);
+    width: 27ch;
+    animation: typing 2s steps(27), blink 0.5s  infinite step-end alternate;
+
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-right: solid 2px transparent;
+    }
+}
+
+
+.container-text h1:hover{
+    color: rgb(255, 196, 0);
+    
+}
+.container-text p{
+    position: relative;
+    top: 24px;
+    text-align: center;
+}
+
+.container-text span{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    color: rgb(255, 196, 0);
+    
+    
+}
+
+.container-icons{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 70%;
+    transition:  all 0.3 ease-in;
+
+}
+
+i{
+    margin: 5px;
+}
+
+i:hover{
+    cursor: pointer;
+    color: rgb(255, 196, 0);
+}
+
+
