@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: #ccc;
+}
+
+
+.card-rick{
+    width: 400px;
+    height: 500px;
+    background: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.card-rick img{
+    height: 150px;
+    width: 150px;
+    border-radius: 1000px;
+    object-fit: cover;
+    position: absolute ;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 20%;
+}
+
+.card-rick span{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 40%;
+    font-size: 15px;
+}
+
+.card-rick h1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 45%;
+    font-size: 25px;
+
+}
+
+
+   
+  
+    
+
+
+
+.p{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 60%;
+    text-align: center;
+    
+    
+}
+
+i{
+    font-size: 30px;
+}
+
+.containe-p{
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    top:240px;
+    max-width: 600px;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 63%;
+}
+.div-cons{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 80%;
+ 
+
+
+}
+svg{
+    margin: 10px;
+    transition:  all 0.3s  ease-in-out;
+}
+svg:hover{
+    cursor: pointer;
+    color: rgb(255, 0, 255);
+}
