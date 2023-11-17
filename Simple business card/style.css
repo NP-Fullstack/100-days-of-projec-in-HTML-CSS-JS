@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+body{
+    height: 100vh;
+    background: #ccc;
+}
+
+.card-Beautiful{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    width: 700px;
+    height: 350px;
+    background: white;
+    font-size: 10px;
+    display: flex;
+    border-radius: 5px;
+    box-shadow:  0px 3px  6px  rgba(0, 0, 0, 0.637);
+    transition:  all 0.5s  ease-in-out;  
+}
+
+.card-Beautiful:hover{
+    width: 800px ;
+
+}
+
+
+span{
+    min-width:200px;
+    font-size: 15px;
+}
+
+.card-Beautiful h1{
+    font-size: 15px;
+}
+img{
+ height: 350px;
+ width: 310px;
+ object-fit: cover;
+ transition:  all 0.5s ease-in-out;
+ border-radius:  0px 80px 80px 0px;
+
+
+}
+
+img:hover{
+    width:400px;
+
+    border-radius: 5px;
+   
+}
+
+.container-text{
+    display: block;
+    position: relative;
+    left: 30px;
+    top: 50px;
+   
+}
+
+.container-text h1{
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    color: rgb(61, 88, 24);
+}
+
+.container-text p{
+    font-size: 14px;
+    position: relative;
+    top: 20px;
+    width: 350px;
+    color: rgb(46, 45, 45);
+}
+
+.icons-container{
+    position: relative;
+    display: inline-flex;
+    top: 250px;
+    right: 329px;
+
+  
+}
+.icons-container svg{
+    margin: 10px;
+    transition:  all 0.5s ease-in-out ;
+}
+
+svg:hover{
+    cursor: pointer;
+    color: rgb(61, 88, 24);
+    transition:  all 0.3s  ease-in-out;
+}
+
