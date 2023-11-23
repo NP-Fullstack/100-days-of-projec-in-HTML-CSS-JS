@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #333333;
+    transition:  all 0.5s  ease-in-out;
+}
+
+
+.text-h1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 10%;
+    left: 50%;
+    color: white;
+    cursor: pointer;
+    text-align: center; 
+}   
+.text-h1::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    position: absolute;
+    transition: all 0.5s  ease-in-out;
+}
+
+.text-h1:hover::after{
+    width: 100%;
+}
+
+.gallery-img img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+ 
+}
+
+
+.gallery-img img:hover{
+   transform: scale(1.1);
+   opacity: 0.3;
+   cursor: pointer;
+
+}
+
+
+.gallery-img{
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 54%;
+    top: 80%;
+    max-width: 1000px;
+}
+
+
+.btn-galler{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 140%;
+    height: 80px;
+    font-size: 18px;
+
+}
+
+.btn-galler button{
+    height: 35px;
+    width: 130px;
+    border-radius: 10px;
+    border: none;
+   
+}
+
+i{
+    font-size: 15px;
+    transition: all 0.9s  ease-in-out;
+}
+
+.span-icons  i{
+    color: white;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 797px){
+   
+    *{
+        
+     
+    }
+    .gallery-img {
+        top: 180%;
+        left: 220px;
+       
+    }
+
+    .gallery-img img{
+        width: 140%;
+    }
+
+    .gallery-img img:hover{
+        opacity: 0.3;
+        transform: scale(1.0);
+    }
+    .btn-galler{
+        top: 2100px;
+
+    }
+
+    
+   
+       
+        
+}
+   
+    
+        
