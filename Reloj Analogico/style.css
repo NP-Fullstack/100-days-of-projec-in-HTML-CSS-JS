@@ -1,0 +1,101 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos de cuerpo */
+body {
+    height: 100vh;
+}
+
+/* Estilos del reloj general */
+.clock-div {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img/AnologClockimg.png);
+    background-size: cover;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+/* Estilo del circulo  del Medio */
+.clock::before{
+    content: '';
+    position: absolute;
+    top: 170px;
+    right: 165px;
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+
+
+/* Estilos para el contenedor de las horas, minutos y segundos */
+.clock .hour, .clock .min, .clock .sec{
+    position: absolute;
+}
+
+.clock .hour .hr{
+    width: 160px;
+    height: 160px;
+
+}
+
+.clock .min .mn{
+    width: 190px;
+    height: 190px;
+
+}
+
+.clock  .sec  .sect{
+    width: 230px;
+    height: 230px;
+
+}
+.hour, .sec, .min{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+.hour::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 70px;
+    background: black;
+    border-radius: 50%;
+    z-index: 10px;
+}
+
+.min::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 80px;
+    background: black;
+    border-radius: 50%;
+    z-index: 11px;
+}
+
+.sec::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 120px;
+    background: black;
+    border-radius: 50%;
+    z-index: 12px;
+}
